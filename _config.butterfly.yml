@@ -1,0 +1,106 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+default_top_img: images/site/top.jpg
+
+# footer是否显示图片背景(与top_img一致)
+footer_img: true
+
+favicon: images/site/favicon.svg
+
+avatar:
+  img: images/site/avatar.jpg
+  effect: false
+
+post_meta:
+  # Home Page
+  page:
+    date_format: relative
+  post:
+    date_type: created
+
+toc:
+  number: false
+  expand: true
+  # Only for post
+  scroll_percent: false
+
+code_blocks:
+  theme: pale night
+  macStyle: true
+
+aside:
+  card_author:
+    description: '写给云宝的 AI 入门连载'
+    button:
+      enable: false
+  card_announcement:
+    content: 从生成式 AI、Token 到 Agent，慢慢讲清楚。
+  card_archives:
+    enable: false
+  card_recent_post:
+    enable: false
+
+busuanzi:
+  site_uv: false
+  site_pv: false
+
+social:
+
+# 美化页面显示
+beautify:
+  enable: true
+  field: site # site/post
+  title-prefix-icon: '\f0c1'
+  title-prefix-icon-color: '#F47466'
+
+footer:
+  owner:
+    since: 2026
+
+index_post_content:
+  length: 300
+
+post_copyright:
+  enable: false
+
+wordcount:
+  enable: true
+
+# 搜索功能
+search:
+  use: local_search
+
+# 关闭分享
+share:
+  use:
+
+# Choose: fancybox / medium_zoom
+# https://github.com/francoischalifour/medium-zoom
+# https://fancyapps.com/fancybox/
+# Leave it empty if you don't need lightbox
+lightbox: medium_zoom
+
+photofigcaption: true
+
+# 阅读模式
+readmode: false
+
+# Add a mask to the header and footer
+mask:
+  header: false
+  footer: false
+
+inject:
+  head:
+    - "<style>.avatar-img img:hover { transform: none !important; }</style>"
+    - "<style>.card-info-social-icons i:hover { transform: none !important; }</style>"
+    - "<style>#page-header.full_page, #page-header.not-home-page, #page-header.post-bg { background-color: rgba(40, 120, 220, 0.35); background-blend-mode: overlay; }</style>"
+    - "<style>#footer { background-color: rgba(40, 120, 220, 0.35); background-blend-mode: overlay; }</style>"
+    - "<style>#local-search .search-dialog hr { display: none; }</style>"
+    - "<style>#article-container figure:not(.highlight) { text-align: center; margin: 0 0 20px; } #article-container figure:not(.highlight) figcaption { margin: 10px 0 10px; color: #858585; } #article-container figure:not(.highlight) video { max-width: 100%; }</style>"
+
+CDN:
+  option:
+    fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css
