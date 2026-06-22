@@ -66,7 +66,7 @@ body {
     0 18px 48px rgba(77, 91, 102, 0.18);
   backdrop-filter: blur(22px) saturate(1.45);
   -webkit-backdrop-filter: blur(22px) saturate(1.45);
-  transition: width 260ms ease, height 260ms ease, background 260ms ease, box-shadow 260ms ease, border-color 260ms ease;
+  transition: background 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
 }
 
 #nav::before {
@@ -83,8 +83,6 @@ body {
 
 #nav:hover,
 #nav.open {
-  height: 66px;
-  width: min(calc(100% - 24px), 1180px);
   border-color: rgba(255, 255, 255, 0.74);
   background:
     linear-gradient(135deg, rgba(255, 255, 255, 0.68), rgba(255, 255, 255, 0.34)),
@@ -115,6 +113,12 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  min-width: 86px;
+  height: 38px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.38);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.48);
 }
 
 #nav a {
@@ -173,15 +177,24 @@ a,
 
   #nav:hover,
   #nav.open {
-    width: calc(100% - 16px);
-    height: 58px;
+    border-color: rgba(255, 255, 255, 0.74);
   }
 
   #nav #blog-info .site-name {
-    max-width: 62vw;
+    max-width: 56vw;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+  }
+
+  #nav #search-button .site-page {
+    min-width: 42px;
+    width: 42px;
+    padding: 0;
+  }
+
+  #nav #search-button .site-page span {
+    display: none;
   }
 
   .recent-post-item,

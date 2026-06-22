@@ -6,7 +6,7 @@ tags:
   - AI入门
   - HR
   - 生成式AI
-cover: images/site/top.jpg
+cover: images/site/chapter-02.jpg
 abbrlink: b2a1f6c8
 date: 2026-06-22 21:00:00
 ---
