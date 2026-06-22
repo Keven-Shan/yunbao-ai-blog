@@ -102,6 +102,21 @@ body {
   align-items: center;
 }
 
+#nav #menus {
+  margin-left: auto;
+}
+
+#nav #search-button {
+  display: flex;
+  align-items: center;
+}
+
+#nav #search-button .site-page {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #nav a {
   color: rgba(38, 49, 59, 0.84) !important;
   text-shadow: none !important;
