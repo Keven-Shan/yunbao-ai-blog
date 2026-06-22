@@ -102,26 +102,13 @@ body {
   align-items: center;
 }
 
-#nav a,
-#nav .site-page {
+#nav a {
   color: rgba(38, 49, 59, 0.84) !important;
   text-shadow: none !important;
 }
 
 #nav .site-name {
   font-weight: 650;
-}
-
-#nav .site-page {
-  border-radius: 999px;
-  padding: 8px 12px;
-  transition: background 180ms ease, transform 180ms ease, color 180ms ease;
-}
-
-#nav .site-page:hover {
-  color: var(--yb-ink) !important;
-  background: rgba(255, 255, 255, 0.54);
-  transform: translateY(-1px);
 }
 
 .recent-post-item,
@@ -180,11 +167,6 @@ a,
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-  }
-
-  #menus {
-    max-width: 34vw;
-    overflow: hidden;
   }
 
   .recent-post-item,
