@@ -94,10 +94,11 @@ mask:
 
 inject:
   head:
+    - "<link rel=\"stylesheet\" href=\"/css/yunbao-style.css\">"
     - "<style>.avatar-img img:hover { transform: none !important; }</style>"
     - "<style>.card-info-social-icons i:hover { transform: none !important; }</style>"
-    - "<style>#page-header.full_page, #page-header.not-home-page, #page-header.post-bg { background-color: rgba(40, 120, 220, 0.35); background-blend-mode: overlay; }</style>"
-    - "<style>#footer { background-color: rgba(40, 120, 220, 0.35); background-blend-mode: overlay; }</style>"
+    - "<style>#page-header.full_page, #page-header.not-home-page, #page-header.post-bg { background-color: rgba(247, 243, 236, 0.2); background-blend-mode: soft-light; }</style>"
+    - "<style>#footer { background-color: rgba(247, 243, 236, 0.54); background-blend-mode: soft-light; }</style>"
     - "<style>#local-search .search-dialog hr { display: none; }</style>"
     - "<style>#article-container figure:not(.highlight) { text-align: center; margin: 0 0 20px; } #article-container figure:not(.highlight) figcaption { margin: 10px 0 10px; color: #858585; } #article-container figure:not(.highlight) video { max-width: 100%; }</style>"
 
